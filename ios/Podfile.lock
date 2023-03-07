@@ -1318,8 +1318,8 @@ PODS:
     - Yoga
   - RNScreens (2.10.1):
     - React
-  - RNVectorIcons (7.1.0):
-    - React
+  - RNVectorIcons (9.2.0):
+    - React-Core
   - SocketRocket (0.6.0)
   - TOCropViewController (2.6.1)
   - Yoga (1.14.0)
@@ -1747,7 +1747,7 @@ SPEC CHECKSUMS:
   RNPermissions: 3635b407c15f2fe591bd2101c8f20aa0912caba8
   RNReanimated: 3ed15d2c7d7fd9d9a284de291a1e347d132d282b
   RNScreens: b748efec66e095134c7166ca333b628cd7e6f3e2
-  RNVectorIcons: bc69e6a278b14842063605de32bec61f0b251a59
+  RNVectorIcons: fcc2f6cb32f5735b586e66d14103a74ce6ad61f8
   SocketRocket: fccef3f9c5cedea1353a9ef6ada904fde10d6608
   TOCropViewController: edfd4f25713d56905ad1e0b9f5be3fbe0f59c863
   Yoga: 1f02ef4ce4469aefc36167138441b27d988282b1

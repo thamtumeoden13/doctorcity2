@@ -19,7 +19,7 @@ export default function LoadingScreen({route, navigation}) {
       transparent={true}
       animationIn={'fadeIn'}
       animationOut={'fadeOut'}        
-      isVisible={loading}        
+      isVisible={!!loading}        
       style={{margin: 0, flex: 1}}
       backdropOpacity={0.1}
       backdropColor={'gray'}>

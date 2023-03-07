@@ -1,15 +1,28 @@
-/**
- * @format
- */
+import React from 'react'
+import { AppRegistry, LogBox } from 'react-native';
+import App from './src/routers/App.js';
+import { name as appName } from './app.json';
+import messaging from '@react-native-firebase/messaging';
+import InCallManager from 'react-native-incall-manager';
+import 'react-native-gesture-handler';
+LogBox.ignoreAllLogs()
 
-import { AppRegistry, LogBox } from 'react-native'
-import App from './src/routers/App'
-import { name as appName } from './app.json'
+// Register background handler
+messaging().setBackgroundMessageHandler(async message => {
+    console.log('Message handled in the background!', message);
+    if (Object.keys(message.data).length > 0 && message.data.type == 'video-join' && !!message.data.roomId) {
+        InCallManager.startRingtone("_BUNDLE_");
+    }
+});
 
 
-// LogBox.ignoreLogs([
-//     'ViewPropTypes will be removed from React Native. Migrate to ViewPropTypes exported from \'deprecated-react-native-prop-types\'.',
-//     'NativeBase: The contrast ratio of',
-//     "[react-native-gesture-handler] Seems like you\'re using an old API with gesture components, check out new Gestures system!",
-// ])
-AppRegistry.registerComponent(appName, () => App)
+function HeadlessCheck({ isHeadless }) {
+    if (isHeadless) {
+        // App has been launched in the background by iOS, ignore
+        return null;
+    }
+    return <App />;
+}
+
+AppRegistry.registerComponent(appName, () => HeadlessCheck);
+

@@ -69,6 +69,9 @@ export default function DangTienHanh({
         style: { backgroundColor: '#fff', paddingTop: 0 },
         keyboardHidesTabBar: true,
       }}
+      screenOptions={{
+        headerShown: false
+      }}
     >
       <Tab.Screen
         name="DichVu"
