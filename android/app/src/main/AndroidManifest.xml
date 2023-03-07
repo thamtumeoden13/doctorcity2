@@ -1,0 +1,63 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.azsolcoltd.doctorcity"
+>
+
+<!-- New version webrtc  -->
+  <uses-feature android:name="android.hardware.camera" />
+  <uses-feature android:name="android.hardware.camera.autofocus" />
+  <uses-feature android:name="android.hardware.audio.output" />
+  <uses-feature android:name="android.hardware.microphone" />
+  <uses-permission android:name="android.permission.BLUETOOTH" android:maxSdkVersion="30" />
+  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" android:maxSdkVersion="30" />
+  <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+  <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+<!-- New version webrtc  -->
+
+  <uses-permission android:name="android.permission.INTERNET" />
+  <!-- Define ACCESS_FINE_LOCATION if you will use enableHighAccuracy=true  -->
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+  <!-- Define ACCESS_COARSE_LOCATION if you will use enableHighAccuracy=false  -->
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+
+  <uses-permission android:name="android.permission.VIBRATE" />
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+  <uses-permission android:name="android.permission.RECORD_AUDIO" />
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+  <uses-permission tools:node="remove" android:name="android.permission.QUERY_ALL_PACKAGES" />
+  <uses-permission tools:node="remove" android:name="android.permission.QUERY_ALL_PACKAGES" tools:ignore="QueryAllPackagesPermission" />
+
+    <application android:name=".MainApplication" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher_round" android:allowBackup="false" android:theme="@style/AppTheme" android:usesCleartextTraffic="${usesCleartextTraffic}" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true">
+      <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyDhLWfuuKVrZB72X6Rf3X9hWp6L-36BPjM" />
+      <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/notification" />
+      <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/white" />
+      <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:resource="@string/default_notification_channel_id" />
+
+      <uses-library android:name="org.apache.http.legacy" android:required="false" />
+      <activity android:name=".MainActivity" android:label="@string/app_name" android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode" android:launchMode="singleTask" android:windowSoftInputMode="adjustResize" android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+        <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+      </intent-filter>
+    </activity>
+    <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+
+    <meta-data android:name="com.google.firebase.ml.vision.DEPENDENCIES" android:value="barcode" />
+    <!-- To use multiple models: android:value="barcode,model2,model3" -->
+    <service android:name="com.google.firebase.messaging.FirebaseMessagingService" android:exported="false">
+      <intent-filter>
+        <action android:name="com.google.firebase.MESSAGING_EVENT" />
+      </intent-filter>
+    </service>
+    </application>
+</manifest>

@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "doctorcity-functions-main",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

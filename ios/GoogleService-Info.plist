@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1051883467266-rut3k9kcrc0i2q25hevf00932h7r49pq.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1051883467266-rut3k9kcrc0i2q25hevf00932h7r49pq</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>1051883467266-euqpandtvhc3eebms0btb36u001tnjur.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAhO1mSgh_t47tpsIjL73rQJEGa_T64qN0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1051883467266</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.azsol.doctorcity</string>
+	<key>PROJECT_ID</key>
+	<string>doctorcity-globe</string>
+	<key>STORAGE_BUCKET</key>
+	<string>doctorcity-globe.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1051883467266:ios:b5df20e2d25610e8052d1b</string>
+	<key>DATABASE_URL</key>
+	<string>https://doctorcity-globe.firebaseio.com</string>
+</dict>
+</plist>
