@@ -40,7 +40,8 @@ const DrawerNavigator = () => {
       />}
       screenOptions={{
         // gestureEnabled: false,
-        swipeEnabled: false
+        swipeEnabled: false,
+        headerShown:false
       }}
     >
       {drawers.map(({ name, icon, label, screen }) => (

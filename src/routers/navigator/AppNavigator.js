@@ -10,8 +10,8 @@ import { AuthStackScreen } from './Auth';
 
 export const AppNavigator = () => {
   const userId = useSelector((state) => state.authReducer.userId);
-  // const navigationRef = useNavigationContainerRef();
-  // console.log('navigationRef', navigationRef)
+  const navigationRef = useNavigationContainerRef();
+  console.log('navigationRef', navigationRef)
   useEffect(() => {
     notificationOpenedApp()
 

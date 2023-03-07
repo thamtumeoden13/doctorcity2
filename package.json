@@ -8,6 +8,7 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint *.js **/*.js",
+    "postinstall": "patch-package",
     "android-apk": "react-native run-android --variant=release",
     "build:ios": "react-native bundle --entry-file='index.js' --bundle-output='./ios/main.jsbundle' --dev=false --platform='ios'"
   },
@@ -33,6 +34,7 @@
     "@react-navigation/native": "6.1.6",
     "@react-navigation/stack": "6.3.16",
     "axios": "1.3.4",
+    "deprecated-react-native-prop-types": "^4.0.0",
     "jsog": "1.0.7",
     "moment": "2.29.4",
     "patch-package": "6.5.1",

@@ -12,14 +12,14 @@ import {useDispatch, useSelector} from 'react-redux';
 
 
 export default function LoadingScreen({route, navigation}) {  
-  // const loading = useSelector((state) => state.commonReducer.loading);  
-  // console.log('loading: ', loading);
+  const loading = useSelector((state) => state.commonReducer.loading);  
+  console.log('loading: ', loading);
   return (
     <Modal
       transparent={true}
       animationIn={'fadeIn'}
       animationOut={'fadeOut'}        
-      isVisible={true}        
+      isVisible={loading}        
       style={{margin: 0, flex: 1}}
       backdropOpacity={0.1}
       backdropColor={'gray'}>
