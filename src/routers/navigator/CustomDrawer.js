@@ -36,8 +36,7 @@ export default (props) => {
   const userId = useSelector((state) => state.authReducer.userId);
   return (
     <LinearGradient locations={[0, 0.5, 0.8]}
-      // colors={['#269CC4', '#32AED8', '#269CC4', '#32AED8']}
-      colors={['#dd740a', '#dd740a',]}
+      colors={['#27ae60', '#27ae60',]}
       style={{ flex: 1, }}
     >
       <SafeAreaView style={[styles.container, { paddingTop: 0 }]}>
@@ -70,13 +69,12 @@ export default (props) => {
               </View>
               <TouchableOpacity
                 style={{
-                  borderRadius: 10,
+                  borderRadius: 8,
                   padding: 8,
-                  backgroundColor: configs.Colors.success,
-                  width: '100%',
-                  height: 40,
+                  backgroundColor: configs.Colors.warning,
+                  width: '80%',
                   flexDirection: 'row',
-                  justifyContent: 'center',
+                  // justifyContent: 'center',
                   alignItems: 'center',
                   shadowOffset: {
                     width: 1,
@@ -87,10 +85,10 @@ export default (props) => {
                 }}>
                 <FontAwesome5Icons
                   name={'edit'}
-                  size={20}
-                  color='#fff'
+                  size={18}
+                  color={configs.Colors.white}
                 />
-                <Text style={{ paddingLeft: 10, color: '#fff', padding: 4 }}>{`Cập nhật`}</Text>
+                <Text style={{ fontSize:12, paddingLeft: 4, color: configs.Colors.white,  }}>{`Cập nhật`}</Text>
               </TouchableOpacity>
             </View>
           )}
@@ -178,12 +176,12 @@ export default (props) => {
             // models.handleLogOut();
           }}
           label={() => (
-            <View style={{ padding: 8, borderRadius: 8, backgroundColor: configs.Colors.straw }}>
+            <View style={{ padding: 4, borderRadius: 8 }}>
               <Text style={{
                 color: '#fff',
                 fontWeight: '500',
                 fontSize: 18,
-                textAlign: 'center'
+                textAlign: 'left'
               }}>{`Đăng xuất`}</Text>
             </View>
           )}

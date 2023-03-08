@@ -29,6 +29,7 @@ export const bgWhite = "#269CC4"
 
 export const danger = '#c0392b';
 export const success = '#27ae60';
+export const warning = '#dd740a';
 export const backround_input = '#ededed';
 export const place_holder = '#8f8f8f';
 export const black50= 'rgba(0,0,0,0.5)';
