@@ -10,6 +10,7 @@
 #import <GoogleMaps/GoogleMaps.h>
 #import "RNFBMessagingModule.h"
 #import <UserNotifications/UserNotifications.h>
+#import "RNSplashScreen.h"
 
 #if RCT_NEW_ARCH_ENABLED
 #import <React/CoreModulesPlugins.h>
@@ -67,6 +68,7 @@ static NSString *const kRNConcurrentRoot = @"concurrentRoot";
   rootViewController.view = rootView;
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+  [RNSplashScreen show];
   return YES;
 }
 

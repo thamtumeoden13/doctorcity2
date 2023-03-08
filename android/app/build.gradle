@@ -307,6 +307,7 @@ dependencies {
 
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
+    implementation project(':react-native-splash-screen')
 
     implementation 'androidx.multidex:multidex:2.0.1'  // <-- ADD THIS DEPENDENCY TO ENABLE multiDexEnabled
     implementation 'com.google.firebase:firebase-analytics:17.3.0'

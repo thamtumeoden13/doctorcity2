@@ -17,6 +17,7 @@
 		701E8E4729B643AE00C0FCCB /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 701E8E4029B643AE00C0FCCB /* main.jsbundle */; };
 		701E8E4829B643AE00C0FCCB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 701E8E4229B643AE00C0FCCB /* GoogleService-Info.plist */; };
 		701E8E4929B643AE00C0FCCB /* incallmanager_ringback.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 701E8E4329B643AE00C0FCCB /* incallmanager_ringback.mp3 */; };
+		702C290A29B8738300E00146 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 702C290929B8738300E00146 /* Launch Screen.storyboard */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		701E8E4129B643AE00C0FCCB /* doctorcity-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "doctorcity-Bridging-Header.h"; sourceTree = "<group>"; };
 		701E8E4229B643AE00C0FCCB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		701E8E4329B643AE00C0FCCB /* incallmanager_ringback.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = incallmanager_ringback.mp3; sourceTree = "<group>"; };
+		702C290929B8738300E00146 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = doctorcity/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -73,6 +75,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				701E8E3C29B643AC00C0FCCB /* doctorcity-Bridging-Header.h */,
+				702C290929B8738300E00146 /* Launch Screen.storyboard */,
 			);
 			name = doctorcity;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				701E8E4429B643AE00C0FCCB /* incallmanager_ringtone.mp3 in Resources */,
+				702C290A29B8738300E00146 /* Launch Screen.storyboard in Resources */,
 				701E8E4729B643AE00C0FCCB /* main.jsbundle in Resources */,
 				701E8E4529B643AE00C0FCCB /* incallmanager_busytone.mp3 in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
@@ -336,7 +340,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.16;
+				MARKETING_VERSION = 2.17;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -369,7 +373,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.16;
+				MARKETING_VERSION = 2.17;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -416,6 +420,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
@@ -488,6 +493,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";

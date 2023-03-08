@@ -113,15 +113,18 @@ const TiepNhanKhachHang = ({ route, navigation }) => {
 
   const getReadyProvider = async () => {
     const readyProviderGet = await readyProvider?.request.get()
-    const readyProviderData = readyProviderGet.data()
+    console.log('readyProviderGet-ThongTin', readyProviderGet)
+    const readyProviderData = await readyProviderGet.data()
     setState(prev => {
       return {
         ...prev,
         isExpand: readyProviderData.yeuCauHoTro == "1" ? true : false
       }
     })
+    console.log('readyProviderData-ThongTin', readyProviderData)
 
     const phienKham = await readyProviderData.phienKham.get();
+    console.log('phienKham-ThongTin', phienKham)
     const phienKhamData = phienKham.data();
     setPhienKham(phienKhamData)
     setPhienKhamRef(phienKham._ref);
@@ -320,6 +323,9 @@ const TiepNhanKhachHang = ({ route, navigation }) => {
             labelStyle: { fontSize: 8, fontWeight: 'bold', textTransform: 'uppercase', textAlign: 'center' },
             style: { backgroundColor: '#fff', paddingTop: 8 },
             keyboardHidesTabBar: true,
+          }}
+          screenOptions={{
+            headerShown: false
           }}
         >
           <Tab.Screen

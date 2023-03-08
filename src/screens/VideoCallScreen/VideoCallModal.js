@@ -47,7 +47,7 @@ const VideoCallModal = () => {
 
     const onGoBack = () => {
         InCallManager.stopRingtone();
-        const parentRoute = navigation.dangerouslyGetParent()
+        const parentRoute = navigation.getParent()
         if (!parentRoute) {
             navigation.navigate('Drawer')
         } else {

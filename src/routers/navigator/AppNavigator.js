@@ -3,6 +3,7 @@ import { NavigationContainer, useNavigationContainerRef } from '@react-navigatio
 import { useSelector } from 'react-redux';
 import messaging from '@react-native-firebase/messaging';
 import InCallManager from 'react-native-incall-manager';
+import SplashScreen from 'react-native-splash-screen'
 
 import { navigationRef } from './navigationServices';
 import { NavigatorMain } from './DrawerNavigator';
@@ -75,8 +76,14 @@ export const AppNavigator = () => {
         // setLoading(false);
       });
   }
+
+  const onReady = () => {
+    console.log('[onReady]')
+    SplashScreen.hide()
+  }
+
   return (
-    <NavigationContainer ref={navigationRef}>
+    <NavigationContainer ref={navigationRef} onReady={onReady}>
       {userId ? <NavigatorMain /> : <AuthStackScreen />}
     </NavigationContainer>
   );

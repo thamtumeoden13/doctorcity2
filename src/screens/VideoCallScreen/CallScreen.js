@@ -180,7 +180,7 @@ export default function CallScreen({ route }) {
         InCallManager.stop({ busytone: '_BUNDLE_' });
         KeepAwake.deactivate();
         
-        const parentRoute = navigation.dangerouslyGetParent()
+        const parentRoute = navigation.getParent()
         if (!parentRoute) {
             navigation.navigate('Drawer')
         } else {

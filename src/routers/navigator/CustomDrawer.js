@@ -37,7 +37,7 @@ export default (props) => {
   return (
     <LinearGradient locations={[0, 0.5, 0.8]}
       // colors={['#269CC4', '#32AED8', '#269CC4', '#32AED8']}
-      colors={['#269CC4', '#32AED8',]}
+      colors={['#dd740a', '#dd740a',]}
       style={{ flex: 1, }}
     >
       <SafeAreaView style={[styles.container, { paddingTop: 0 }]}>
@@ -64,8 +64,8 @@ export default (props) => {
                   resizeMode="cover"
                 />
                 <View style={{ justifyContent: 'center', padding: 8 }}>
-                  {!!userInfo && !!userInfo.displayName && <Text style={{ color, padding: 4 }}>{userInfo.displayName}</Text>}
-                  {!!userInfo && !!userInfo.phoneNumber && <Text style={{ color, padding: 4 }}>{userInfo.phoneNumber}</Text>}
+                  {!!userInfo && !!userInfo.displayName && <Text style={{ color: "#fff", padding: 4 }}>{userInfo.displayName}</Text>}
+                  {!!userInfo && !!userInfo.phoneNumber && <Text style={{ color: "#fff", padding: 4 }}>{userInfo.phoneNumber}</Text>}
                 </View>
               </View>
               <TouchableOpacity
@@ -178,12 +178,12 @@ export default (props) => {
             // models.handleLogOut();
           }}
           label={() => (
-            <View style={{ padding: 8, borderRadius: 8, paddingTop: 0, paddingBottom: 0 }}>
+            <View style={{ padding: 8, borderRadius: 8, backgroundColor: configs.Colors.straw }}>
               <Text style={{
-                color: '#f00',
+                color: '#fff',
                 fontWeight: '500',
                 fontSize: 18,
-                textAlign: 'left'
+                textAlign: 'center'
               }}>{`Đăng xuất`}</Text>
             </View>
           )}

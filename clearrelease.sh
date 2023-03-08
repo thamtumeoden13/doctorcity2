@@ -1,1 +1,1 @@
-cd android && ./gradlew clean && ./gradlew cleanBuildCache
+cd android && ./gradlew clean
