@@ -67,7 +67,7 @@ export default (props) => {
                   {!!userInfo && !!userInfo.phoneNumber && <Text style={{ color: "#fff", padding: 4 }}>{userInfo.phoneNumber}</Text>}
                 </View>
               </View>
-              <TouchableOpacity
+              <View
                 style={{
                   borderRadius: 8,
                   padding: 8,
@@ -89,7 +89,7 @@ export default (props) => {
                   color={configs.Colors.white}
                 />
                 <Text style={{ fontSize:12, paddingLeft: 4, color: configs.Colors.white,  }}>{`Cập nhật`}</Text>
-              </TouchableOpacity>
+              </View>
             </View>
           )}
         />
