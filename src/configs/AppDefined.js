@@ -1,7 +1,7 @@
 import { Dimensions, StatusBar, Platform } from 'react-native';
 import DeviceInfo from 'react-native-device-info';
 
-export const NAME_APP = 'Doctor City';
+export const NAME_APP = 'DoctorCity';
 // export const SDT_KHAN_CAP = '0333333333';
 export const SDT_KHAN_CAP = '0981919115' // '02433119115';
 export const SDT_TT_NCC = '0981919115';
